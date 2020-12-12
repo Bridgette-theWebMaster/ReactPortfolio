@@ -1,0 +1,31 @@
+.ProjectContainer img {
+  max-width: 75%;
+}
+
+.Project h1 {
+  font-size: 3vh;
+}
+
+.Project p,
+a {
+  color: rgba(70, 69, 69, 0.945);
+  font-size: 1.6vh;
+}
+
+.Project a {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1100px) {
+  .Project a {
+    text-decoration: none;
+  }
+  .Project a:hover {
+    color: rgba(247, 240, 240, 0.945);
+    background: rgba(70, 69, 69, 0.945);
+    text-decoration: none;
+  }
+  .Project p {
+    font-size: 2vh;
+  }
+}

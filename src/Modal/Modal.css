@@ -1,0 +1,42 @@
+.Modal {
+  position: fixed;
+  z-index: 500;
+  background-color: rgba(219, 219, 189, 0.76);
+  width: 75%;
+  height: 50%;
+  border-radius: 20%;
+  box-shadow: 1px 1px 1px rgb(241, 136, 177);
+  padding: 5%;
+  left: 14%;
+  top: 30%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  margin: 2px;
+  overflow: auto;
+}
+.exitbtn {
+  border: none;
+  background: transparent;
+  float: right;
+}
+
+@media only screen and (min-width: 800px) {
+  .Modal {
+    left: 15%;
+    top: 30%;
+  }
+  .Modal::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .Modal::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .Modal::-webkit-scrollbar-thumb {
+    background-color: #bd5d89;
+    border: none;
+  }
+}
