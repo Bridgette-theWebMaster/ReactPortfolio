@@ -3,6 +3,7 @@ import * as emailjs from "emailjs-com";
 import linkedin from "../Assets/linkedin.png";
 import github from "../Assets/github.png";
 import email from "../Assets/email.png";
+import "./Contact.css";
 
 export default function Contact() {
   const [emailMessage, setEmailMessage] = useState({
@@ -42,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className="ContactContainer">
       <h1>Contact</h1>
       <a
         target="_blank"
@@ -61,7 +62,7 @@ export default function Contact() {
       <a href="mailto:turner.bridgette@yahoo.com?subject=Developer%20inquirey.">
         <img src={email} alt="email" width="50px" />
       </a>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="ContactForm">
         <input
           name="name"
           type="name"
@@ -77,6 +78,8 @@ export default function Contact() {
           placeholder="Email"
         />
         <textarea
+          cols="25"
+          rows="4"
           name="message"
           type="message"
           values={emailMessage.message}
@@ -84,7 +87,9 @@ export default function Contact() {
           placeholder="Write your email here"
         />
         <br />
-        <button type="submit">Connect with me</button>
+        <button type="submit" className="Contactbtn">
+          Connect with me
+        </button>
       </form>
     </div>
   );

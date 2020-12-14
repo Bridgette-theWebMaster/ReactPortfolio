@@ -1,0 +1,33 @@
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contactbtn {
+  border: none;
+  align-self: center;
+  font-family: "Neucha", cursive;
+  background-color: salmon;
+  color: seashell;
+  border-radius: 30%;
+}
+.Contactbtn:hover {
+  color: salmon;
+  background-color: seashell;
+}
+
+.ContactContainer a:hover {
+  background-color: #ffa07a;
+}
+
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  margin-bottom: 1%;
+  border-radius: 10%;
+  border: none;
+  background: rgba(244, 244, 244, 0.562);
+}
