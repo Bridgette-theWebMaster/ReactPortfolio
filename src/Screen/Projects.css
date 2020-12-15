@@ -9,9 +9,13 @@ ul li {
   align-items: center;
 }
 
+h2 {
+  color: rgba(70, 69, 69, 0.945);
+}
+
 .Projects p {
   font-size: 20px;
-  display: inline;
+  color: rgba(70, 69, 69, 0.945);
 }
 
 .Projects a {
@@ -43,7 +47,7 @@ ul li {
   }
 
   .ProjectsContainer h1 {
-    font-size: 3.2vh;
+    font-size: 3.5vh;
   }
 }
 
@@ -57,5 +61,12 @@ ul li {
     background: rgba(70, 69, 69, 0.945);
     color: rgba(247, 240, 240, 0.945);
     text-decoration: none;
+  }
+
+  .Projects .row {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vh;
+    align-content: center;
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Projects.css";
 
 export default function Projects(props) {
@@ -11,9 +10,21 @@ export default function Projects(props) {
         <>
           <li key={p.id} className="Projects">
             <img src={p.photo} alt={p.name} />
-            <Link to={`/projects/${p.id}`}>
-              <p>{p.name}</p>
-            </Link>
+            <div className="row">
+              <h2>{p.name}</h2>
+
+              <p>{p.description}</p>
+              <p>Built with: {p.tech}</p>
+              {p.liveSite !== null ? <a href={p.liveSite}>Live Site</a> : null}
+              <br />
+              {p.clientRepo !== null ? (
+                <a href={p.clientRepo}>Client Repo</a>
+              ) : null}
+              <br />
+              {p.serverRepo !== null ? (
+                <a href={p.serverRepo}>Server Repo</a>
+              ) : null}
+            </div>
           </li>
         </>
       ))}

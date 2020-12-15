@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Modal from "./Modal/Modal";
 import About from "./Screen/About";
 import Projects from "./Screen/Projects";
-import Project from "./Screen/Project";
 import Contact from "./Screen/Contact";
 import STORE from "./PROJECTS";
 import { Link, Route, Switch } from "react-router-dom";
@@ -63,16 +62,6 @@ function App() {
             <Modal show={modalToggle} showModal={modalHandler}>
               <div style={{ color: "black" }}>
                 <Projects projects={STORE.projects} />
-              </div>
-            </Modal>
-          )}
-        />
-        <Route
-          path="/projects/:id"
-          render={(props) => (
-            <Modal show={modalToggle} showModal={modalHandler}>
-              <div style={{ color: "black" }}>
-                <Project {...props} />
               </div>
             </Modal>
           )}
