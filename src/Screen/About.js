@@ -32,6 +32,13 @@ export default function About() {
         have been able to begin my pursuit as a software engineer and I am
         excited to join a team of motivated software engineers.
       </p>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://docs.google.com/document/d/1JWZb7cp2YtLz9epxbMoSQf1GjCK3DbKa1zFkqB7uVF0/edit?usp=sharing"
+      >
+        Check out my Resume
+      </a>
     </div>
   );
 }

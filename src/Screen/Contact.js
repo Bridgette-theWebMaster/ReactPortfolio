@@ -3,6 +3,7 @@ import * as emailjs from "emailjs-com";
 import linkedin from "../Assets/linkedin.png";
 import github from "../Assets/github.png";
 import email from "../Assets/email.png";
+import resume from "../Assets/resume.png";
 import "./Contact.css";
 
 export default function Contact() {
@@ -61,6 +62,13 @@ export default function Contact() {
       </a>
       <a href="mailto:turner.bridgette@yahoo.com?subject=Developer%20inquirey.">
         <img src={email} alt="email" width="50px" />
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://docs.google.com/document/d/1JWZb7cp2YtLz9epxbMoSQf1GjCK3DbKa1zFkqB7uVF0/edit?usp=sharing"
+      >
+        <img src={resume} alt="resume" width="50px" />
       </a>
       <form onSubmit={handleSubmit} className="ContactForm">
         <input
